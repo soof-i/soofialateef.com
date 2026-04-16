@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soofia Lateef</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #352925;
+      --bg-light: #3f302b;
+      --text-primary: #f0e8e0;
+      --text-muted: #c4b0a3;
+      --accent: #d4a574;
+      --accent-warm: #e8c49a;
+      --rule: rgba(212, 165, 116, 0.25);
+      --font: 'Source Serif 4', Georgia, serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* ── LAYOUT ── */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
+    }
+
+    /* ── LEFT: scrolling text ── */
+    .text-col {
+      padding: 60px 56px 80px 56px;
+      overflow-y: auto;
+    }
+
+    /* ── RIGHT: sticky image ── */
+    .image-col {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      background-color: var(--bg-light);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .image-col img,
+    .image-placeholder {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Decorative placeholder if no real image */
+    .image-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      background: linear-gradient(160deg, #3f302b 0%, #2a1f1a 60%, #1e1510 100%);
+      color: var(--text-muted);
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .image-placeholder svg {
+      opacity: 0.35;
+    }
+
+    .image-placeholder span {
+      opacity: 0.5;
+    }
+
+    /* Subtle grain overlay on image panel */
+    .image-col::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    .site-header {
+      margin-bottom: 52px;
+      padding-bottom: 36px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      color: var(--accent-warm);
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .contact-line {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+
+    .contact-line a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .contact-line a:hover {
+      border-color: var(--accent);
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      margin-bottom: 52px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.01em;
+      margin-bottom: 22px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h3 {
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      opacity: 0.7;
+      margin-bottom: 10px;
+      margin-top: 26px;
+    }
+
+    h3:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      color: var(--text-primary);
+      margin-bottom: 10px;
+      font-size: 0.97rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      padding: 5px 0 5px 18px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      opacity: 0.5;
+      font-size: 0.8rem;
+      top: 6px;
+    }
+
+    .year {
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      .split {
+        display: block;
+      }
+
+      .text-col {
+        padding: 40px 24px 48px;
+      }
+
+      .image-col {
+        position: static;
+        height: 60vw;
+        min-height: 260px;
+        max-height: 420px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="split">
+
+  <!-- LEFT: Scrolling Text -->
+  <div class="text-col">
+    <h1>Soofia Lateef</h1>
+<p>Philosophy PhD Candidate, University of California, Riverside</p>
+<p>slate003 [at] ucr [dot] edu · <a href="https://profiles.ucr.edu/app/home/profile/slate003">University Profile</a></p>
+<h2>Research</h2>
+<h3>Graduate Research Projects</h3>
+<ul>
+<li>Dissertation: <em>Pessimism and Affect</em></li>
+<li>Masters Thesis: <em>Hope and Power-Seeking</em> (accepted 2023)</li>
+</ul>
+<h3>Conference Presentations</h3>
+<ul>
+<li>Contemporary Challenges and Values 4: Values and Emotions — Institute of Philosophy, Maria Curie-Skłodowska University (2025)</li>
+<li>Politics of Pessimism conference — Tufts University (2025)</li>
+<li>Pessimism: Problematising the Value of Life conference — NOVA University Lisbon (2024)</li>
+</ul>
+<h3>Fellowships</h3>
+<ul>
+<li>UC Riverside Dissertation Program Fellowship, $23,000 (2027)</li>
+<li>UC Riverside Center for Ideas and Society Summer Dissertation Writing Fellowship, $8,000 (2026)</li>
+<li>UC Riverside Dean's Distinguished Fellowship Award, $6,000 (2020)</li>
+</ul>
+<h3>Research Groups</h3>
+<ul>
+<li>Graduate Fellow, Emotion and Society Lab (2023–2024)</li>
+<li>Participant, Experimental and Feminist Philosophy Workshop — CUNY (2021)</li>
+</ul>
+<h2>Service</h2>
+<ul>
+<li>UC Riverside colloquia coordinator (2024–present)</li>
+<li>Minorities and Philosophy chapter head for UC Riverside (2024–present)</li>
+<li>Judge, California Regional Ethics Bowl (2025)</li>
+<li>UC Riverside Mellon Mays Undergraduate Fellowship roundtable panelist (2024)</li>
+<li>Graduate Student teaching mentor, UC Riverside Philosophy department (2022–2023)</li>
+<li>Presentation on Diversity Statements, UC Riverside Philosophy department (2022)</li>
+</ul>
+<h2>Teaching</h2>
+<p>Associate Instructor and Teaching Assistant at University of California, Riverside (2021–present)</p>
+<h3>Teaching Awards</h3>
+<ul>
+<li>Graduate Division's Outstanding TA Award (2025)</li>
+<li>Philosophy Department Distinguished TA Award (2022)</li>
+</ul>
+<h3>As Associate Instructor</h3>
+<ul>
+<li>Evil</li>
+<li>Introduction to Law and Society</li>
+</ul>
+<h3>As Teaching Assistant — Philosophy</h3>
+<ul>
+<li>Evil</li>
+<li>Philosophy of Race</li>
+<li>Hellenistic Philosophy</li>
+<li>Biomedical Ethics</li>
+<li>Introduction to Law and Society</li>
+<li>Philosophy of Law</li>
+<li>Introduction to Philosophy</li>
+<li>Contemporary Moral Issues</li>
+<li>Ethics and the Meaning of Life</li>
+<li>Critical Thinking</li>
+<li>Introduction to Logic</li>
+<li>Formal Logic</li>
+</ul>
+<h3>As Teaching Assistant — Gender &amp; Sexuality Studies</h3>
+<ul>
+<li>Women and Culture</li>
+</ul>
+
+  </div>
+
+  <!-- RIGHT: Sticky Image -->
+  <div class="image-col">
+    <img src="img_soofia.webp" alt="Soofia Lateef">
+  </div>
+
+</div><!-- /split -->
+
+</body>
+</html>
