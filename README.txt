@@ -11,4 +11,9 @@ Everything you need to edit is in the src folder
 
 To run edits
 - in soofialateef.com folder, run cmd, then:
+- to preview site changes
 	npx eleventy --serve
+- to push site changes to Netlify
+	git add .
+	git commit -m "updated CV"
+	git push
