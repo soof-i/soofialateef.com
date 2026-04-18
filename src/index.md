@@ -53,6 +53,7 @@ Associate Instructor and Teaching Assistant at University of California, Riversi
 ### As Associate Instructor
 
 - Evil
+- Philosophical Issues of Race and Gender
 - Introduction to Law and Society
 
 ### As Teaching Assistant — Philosophy
