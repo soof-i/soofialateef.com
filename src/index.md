@@ -23,9 +23,9 @@ slate003 [at] ucr [dot] edu · [University Profile](https://profiles.ucr.edu/app
 
 ### Fellowships
 
-- UC Riverside Dissertation Program Fellowship, $23,000 (2027)
+- UC Riverside Dissertation Program Fellowship, $23,000 (2026-2027)
 - UC Riverside Center for Ideas and Society Summer Dissertation Writing Fellowship, $8,000 (2026)
-- UC Riverside Dean's Distinguished Fellowship Award, $6,000 (2020)
+- UC Riverside Provost Research Fellowship, $50,000 (2020-2025)
 
 ### Research Groups
 
