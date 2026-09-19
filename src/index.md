@@ -4,16 +4,18 @@ layout: base.njk
 
 # Soofia Lateef
 
-Philosophy PhD Candidate, University of California, Riverside
+Philosophy PhD Candidate · University of California, Riverside
 
-SLate003 [at] ucr [dot] edu · [University Profile](https://profiles.ucr.edu/app/home/profile/slate003)
+SLate003 [at] ucr [dot] edu
+[University Profile](https://profiles.ucr.edu/app/home/profile/slate003)
+[Phil People Page](https://philpapers.org/rec/LATIII)
 
 ## Research
 
 ### Graduate Research Projects
 
-- Dissertation: *Pessimism and Affect*
-- *Insight Into Irrationality: Schopenhauerian Tragic Compassion*. Kultura I Wartości 41:75-95. http://dx.doi.org/10.17951/kw.2026.41.75-95 (published 2026)
+- <a href="/diss.webp" target="_blank" rel="noopener">Dissertation: <em>Pessimism and Affect</em></a>
+- [*Insight Into Irrationality: Schopenhauerian Tragic Compassion*.](https://philpapers.org/rec/LATIII) Kultura I Wartości 41:75-95. http://dx.doi.org/10.17951/kw.2026.41.75-95 (published 2026)
 - Masters Thesis: *Hope and Power-Seeking* (accepted 2023)
 
 ### Conference Presentations
