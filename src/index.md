@@ -6,26 +6,28 @@ layout: base.njk
 
 Philosophy PhD Candidate, University of California, Riverside
 
-slate003 [at] ucr [dot] edu · [University Profile](https://profiles.ucr.edu/app/home/profile/slate003)
+SLate003 [at] ucr [dot] edu · [University Profile](https://profiles.ucr.edu/app/home/profile/slate003)
 
 ## Research
 
 ### Graduate Research Projects
 
 - Dissertation: *Pessimism and Affect*
+- *Insight Into Irrationality: Schopenhauerian Tragic Compassion*. Kultura I Wartości 41:75-95. http://dx.doi.org/10.17951/kw.2026.41.75-95 (published 2026)
 - Masters Thesis: *Hope and Power-Seeking* (accepted 2023)
 
 ### Conference Presentations
 
+- International Society for Moral Psychology Inaugural Conference — Cornell University (2026)
 - Contemporary Challenges and Values 4: Values and Emotions — Institute of Philosophy, Maria Curie-Skłodowska University (2025)
 - Politics of Pessimism conference — Tufts University (2025)
 - Pessimism: Problematising the Value of Life conference — NOVA University Lisbon (2024)
 
 ### Fellowships
 
-- UC Riverside Dissertation Program Fellowship, $23,000 (2026-2027)
-- UC Riverside Center for Ideas and Society Summer Dissertation Writing Fellowship, $8,000 (2026)
-- UC Riverside Provost Research Fellowship, $50,000 (2020-2025)
+- $23,000 UC Riverside Dissertation Program Fellowship (2026-2027)
+- $8,000 UC Riverside Center for Ideas and Society Summer Dissertation Writing Fellowship (2026)
+- $50,000 UC Riverside Provost Research Fellowship (2020-2025)
 
 ### Research Groups
 
@@ -47,13 +49,13 @@ Associate Instructor and Teaching Assistant at University of California, Riversi
 
 ### Teaching Awards
 
-- Graduate Division's Outstanding TA Award (2025)
-- Philosophy Department Distinguished TA Award (2022)
+- Graduate Division's Outstanding TA Award (2025-2026)
+- Philosophy Department Distinguished TA Award (2021-2022)
 
 ### As Associate Instructor
 
+- Philosophical Issues of Race and Gender (upcoming in Summer 2026)
 - Evil
-- Philosophical Issues of Race and Gender
 - Introduction to Law and Society
 
 ### As Teaching Assistant — Philosophy
