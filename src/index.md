@@ -7,7 +7,9 @@ layout: base.njk
 Philosophy PhD Candidate · University of California, Riverside
 
 SLate003 [at] ucr [dot] edu
+
 [University Profile](https://profiles.ucr.edu/app/home/profile/slate003)
+
 [Phil People Page](https://philpapers.org/rec/LATIII)
 
 ## Research
